@@ -16,7 +16,24 @@
 //     name:"hansraj"
 //     age:23
 // }
-const myFunction = function(){
-    console.log("hello world");
-}
+// onst myFunction = function(){
+//     console.log("hello world");
+// }c
 
+//*---------------------------------------------------------------------------------------------------
+// stack(primitive) , heap(non primitive)
+//EXAMPLE OF STACK 
+// let myutubeName = "hansrajpanwar100@gmail.com"
+// let anotherName = myutubeName
+// anotherName = "vanshrajpanwar100@gmail.com"
+// console.log(myutubeName);
+// console.log(anotherName);
+//EXAMPLE OF HEAP
+let userOne = {
+    email: " hansrajpanwar100@gmail.com",
+    upi: "user@upi"
+}
+let userTwo = userOne
+userTwo.email = "vanshrajpanwar100@gmail.com"
+console.log(userOne.email);
+console.log(userTwo.email);
