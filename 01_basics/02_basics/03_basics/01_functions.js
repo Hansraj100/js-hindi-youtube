@@ -42,4 +42,10 @@ function anyobject(A){
     console.log("my username is", A.username, "and price is" ,A.price);
 }
 console.log(anyobject(user));
+//ARRRAYYY PASSING FUNCTION
+const myNewArray = [100,200,300,400]
+function returnSecondArray(getarray){
+    return getarray[1]
+}
+console.log(returnSecondArray(myNewArray));
 
