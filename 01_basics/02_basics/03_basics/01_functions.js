@@ -25,5 +25,21 @@ function userJustLoggedIn(username){
     }
     return`${username} just logged in`
 }
-console.log(userJustLoggedIn());
+//console.log(userJustLoggedIn());
+
+//ADDING MORE MUMBERS IN FUNCTIONS LIKE ADDING MORE ITEMS IN CART USING REST operator
+ function addMoreNumbers(val1,val2,...num1){  //this val1 and val2 will be removed 
+    return num1
+ }
+// console.log(addMoreNumbers(200,400,800));
+//object
+const user = {
+    name:"hansraj",
+    username:"hansraj",
+    price:"8000"
+}
+function anyobject(A){
+    console.log("my username is", A.username, "and price is" ,A.price);
+}
+console.log(anyobject(user));
 
