@@ -1,12 +1,12 @@
 //THIS IS THE BASIC OF this KEYWORD
-const user = {
+// const user = {
   //  username:"hansraj",
     price:900,
-    welcomeMessage:function(){
+    //welcomeMessage:function(){
        // console.log(`${this.username} , welcome to this website`);
         //console.log(this);//to print the whole 
-    }
-}
+    //}
+//}
 //user.welcomeMessage()
 //TO CHANGE THE CONTEXT 
 //user.username = "vanshraj"
@@ -23,10 +23,10 @@ const user = {
     //console.log(this.username);
 //}
 //THIS IS ARROW FUNCTION 
-const chai= () => {
-        let username = "hansraj"
-        console.log(this.username);
-    }
+// const chai= () => {
+//         let username = "hansraj"
+//         console.log(this.username);
+//     }
    // chai()
    //BASIC ARROW FUNCTION
   // () =>{
@@ -37,5 +37,14 @@ const chai= () => {
   // const addtwo = (num1,num2)=>(num1 + num2)
 //console.log(addtwo(2,3));
 //HOW TO RETURN OBJECT 
-const addtwo = (num1c,num2)=>({username:"hansraj"});
-console.log(addtwo(3,4));
+// const addtwo = (num1c,num2)=>({username:"hansraj"});
+// console.log(addtwo(3,4));
+//IMMEDIATELY INVOKED FUNCTION EXPRESSION (IIFE)=>GLOBAL SCOPE KE POLLUTION KO HATANE KE LIYE IIFE KA USE KIYA 
+(function chai(){
+  //NAMED IIFE
+    console.log(`DB CONNECTED`);
+})();
+( (name) => {
+  //SIMPLE IIFE
+  console.log(`DB CONNECTED TWO ${name}`);
+} )("hansraj")
