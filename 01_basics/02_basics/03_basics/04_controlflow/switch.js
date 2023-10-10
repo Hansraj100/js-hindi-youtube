@@ -47,3 +47,9 @@ switch(mahina){
             console.log("Default month match");
             break;
 }
+const userEmail = "hansrajpanwar100@gmail.com"
+if(userEmail){
+    console.log("got the user email");
+}else {
+    console.log("dont get useremail");
+}
